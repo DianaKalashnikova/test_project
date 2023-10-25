@@ -1,0 +1,34 @@
+.signs {
+    padding: 88px 0;
+    background-color: #F3F3F3;
+    &__items {
+        display: flex;
+        justify-content: space-between;        
+    }
+    &__item {
+        position: relative;
+        width: 264px;
+        height: 168px;
+        background-color: #fff;
+        &:hover {
+            background-color: $main-color;
+        }
+        &-img {
+            position: absolute;           
+            top: -25%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 104px;
+            height: 104px;
+        }
+        &-descr {
+            width: 216px;
+            margin: 88px 24px 32px 24px;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 24px;
+            color: $second-color;
+        }
+    }
+}

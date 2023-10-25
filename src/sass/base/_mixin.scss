@@ -1,0 +1,10 @@
+@mixin before_rectangle {
+    &:before {
+        content: '';
+        position: absolute;        
+        top: 40%;
+        width: 56px;
+        height: 16px;
+        background: $main-color;
+    }
+}

@@ -1,0 +1,25 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    max-width: 100%;
+    width: 1416px;
+    margin: 0 auto; 
+}
+
+
+@import 'base/variables';
+@import 'base/mixin';
+@import 'blocks/menu';
+@import 'blocks/promo';
+@import 'blocks/signs';
+@import 'blocks/price';
+@import 'blocks/buttons';
+@import 'blocks/choice';
+@import 'blocks/difference';
+@import 'blocks/advantages';
+@import 'blocks/about';
+@import 'blocks/footer';
+
+

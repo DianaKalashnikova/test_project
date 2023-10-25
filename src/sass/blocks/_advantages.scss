@@ -1,0 +1,56 @@
+.advantages {
+    position: relative;
+
+    &__title {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 40px;
+        color: $second-color;
+        margin-top: 88px;
+        @include before_rectangle;
+        &:before {
+            top: 15px;
+        }
+        span {
+            position: relative;
+        }
+    }
+    &__items {
+        position: relative;
+        margin: 32px 0 88px 48px;
+        display: grid;
+        grid-template: repeat(3, 248px) / repeat(3, 408px);
+        grid-auto-rows: 1fr;
+        column-gap: 72px;
+        row-gap: 24px;        
+    }
+    &__item {
+        position: relative;
+        background-color: #F3F3F3;
+        &:hover {
+            background-color: $main-color;
+        }
+        &-img {
+            position: absolute;
+            left: -12%;
+            top: 40px;
+        }
+        &-descr {
+            padding: 40px 24px 0 48px;
+        }
+    }
+    &__side-text {
+        padding-bottom: 5px;
+        pointer-events: none;        
+        position: absolute;
+        top: 0;
+        left: 100%;
+        transform: rotate(90deg) translateY(-100%);
+        transform-origin: top left;
+        color: #858585;
+        font-size: 96px;
+        font-weight: 700;
+        line-height: 1;
+        opacity: 0.1;
+    }
+}

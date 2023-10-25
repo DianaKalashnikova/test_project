@@ -1,0 +1,36 @@
+.about {
+    min-height: 550px;
+    background-color: #F3F3F3;
+
+    &__wrapper {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+    }   
+    &__title {
+        margin-top: 120px;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 40px;
+        color: $second-color;
+        @include before_rectangle;
+        &:before {
+            top: 31%;
+        }        
+        span {
+            position: relative;
+        }
+    }        
+    &__descr {
+        margin-top: 32px;
+        width: 576px;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        color: $second-color;
+    }
+    &__image {
+        
+        margin-top: 88px;
+    } 
+}
